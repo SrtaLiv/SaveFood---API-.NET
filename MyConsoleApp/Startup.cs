@@ -11,7 +11,7 @@ public class Startup
     public void ConfigureServices(IServiceCollection services)
     {
         // Replace with your connection string.
-        var connectionString = "server=localhost;user=root;password=1234;database=ef";
+        var connectionString = "server=localhost;user=root;database=ef";
 
         // Replace with your server version and type.
         // Use 'MariaDbServerVersion' for MariaDB.

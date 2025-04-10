@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.Extensions.DependencyInjection;
 using MyConsoleApp.Models;
-
+using MyConsoleApp.Repositories;
 
 namespace MyConsoleApp
 {
@@ -11,6 +11,7 @@ namespace MyConsoleApp
         {
             // Creamos el contenedor de dependencias
             var services = new ServiceCollection();
+            services.AddScoped<IFoodRepository, FoodRepository>();
 
             // Llamamos a Startup para configurar servicios
             var startup = new Startup();
